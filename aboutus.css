@@ -1,0 +1,297 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+/* Navigation Menu Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.navbar .logo {
+    font-size: 24px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+}
+
+.menu-toggle.open .bar:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 8px;
+}
+
+.menu-toggle.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.open .bar:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -8px;
+}
+
+
+
+/* Fullscreen Menu Styles */
+.fullscreen-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.fullscreen-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.fullscreen-menu ul li {
+    margin: 20px 0;
+}
+
+.fullscreen-menu ul li a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+.page1 {
+    width: 100vw;
+    height: auto;
+}
+.nav {
+    width: 100vw;
+    height: 50px;
+    background-color: rgba(220, 220, 220, 0.226);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2vw;
+
+}
+.nav h4 {
+    font-size: 1.7vw;
+    font-weight: 700;
+    font-family: 'Clash Grotesk', sans-serif;
+    color: black;
+}
+.navlinks {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    padding-right: 2vw;
+
+}
+.navlinks h5 {
+    font-size: 1.2vw;
+    font-weight: 550;
+    font-family: 'Excon', sans-serif;
+}
+.page1 h2 {
+    font-weight: 200;
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 3vw;
+    color: white;
+    mask-image: linear-gradient(to top, rgba(255, 255, 255, 0.055), rgb(223, 218, 218));
+
+}
+.ourstory {
+    margin-left: 5vw;
+}
+.ourstory h3 {
+    font-size: 6vw;
+
+    color: white;
+    font-weight: 500;
+    font-family: 'Zodiak', serif;
+    
+
+}
+.ourstory h5 {
+    font-size: 1.3vw;
+    color: grey;
+    font-weight: 800;
+    color: gray;
+    font-size: 1.6vw;
+    font-weight: 400;
+    margin-right: 5vw;
+ text-align: justify;
+    
+
+}
+.team {
+    margin-top: 6vw;
+}
+.team h1 {
+    font-size: 6vw;
+    margin-left: 5vw;
+    color: white;
+    font-weight: 500;
+    font-family: 'Zodiak', serif;
+}
+.members {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vw;
+    margin-left: 5vw;
+}
+.members img {
+    width: 700px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: top;
+}
+.aboutmembers {
+    margin-left: 4vw;
+}
+.aboutmembers h3 {
+    color: white;
+    font-size: 2vw;
+}
+.aboutmembers h4 {
+    color: grey;
+    width: 93%;
+    font-size: 1.4vw;
+    font-weight: 400;
+    text-align: justify;
+}
+
+
+
+
+@media (max-width: 1000px) {
+    .navbar .nav-links {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .fullscreen-menu.active {
+        display: flex;
+    }
+    .page1 h2 {
+        color: white;
+        text-align: center;
+        font-size: 5.3vw;
+        padding-top: 2vw;
+        mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 1));
+    }
+    .ourstory h3 {
+        font-size: 6.5vw;
+    
+        color: white;
+        font-weight: 500;
+        font-family: 'Zodiak', serif;
+        
+    
+    }
+    .ourstory h5 {
+        color: grey;
+        font-weight: 800;
+        color: gray;
+        font-size: 4.6vw;
+        font-weight: 400;
+        margin-right: 5vw;
+     text-align: justify;
+        
+    
+    }
+    .team {
+        margin-top: 6vw;
+    }
+    .team h1 {
+        font-size: 6vw;
+        margin-left: 5vw;
+        color: white;
+        font-weight: 500;
+        font-family: 'Zodiak', serif;
+        margin-bottom: 8vw;
+    }
+
+    .members {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10vw;
+        margin-left: 5vw;
+        flex-direction: column;
+        margin-bottom: 15vw;
+    }
+    .members img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        object-position: top;
+    }
+    .aboutmembers {
+        margin-left: 4vw;
+        margin-top: 5vw;
+    }
+    .aboutmembers h3 {
+        color: white;
+        font-size: 6.7vw;
+        color: white;
+        font-weight: 500;
+        font-family: 'Zodiak', serif;
+        text-align: center;
+    }
+    .aboutmembers h4 {
+        color: grey;
+        width: 93%;
+        font-size: 4.5vw;
+        font-weight: 400;
+        text-align: justify;
+    }
+    
+    
+    
+
+
+}
+
+    
+    

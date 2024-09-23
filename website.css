@@ -1,0 +1,482 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+html , body {
+    width: 100%;
+    height: 100%;
+}
+.page1 {
+    width: 100vw;
+    height: 100vh;
+}
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+/* Navigation Menu Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.navbar .logo {
+    font-size: 24px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+}
+
+.menu-toggle.open .bar:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 8px;
+}
+
+.menu-toggle.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.open .bar:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -8px;
+}
+
+
+
+/* Fullscreen Menu Styles */
+.fullscreen-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.fullscreen-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.fullscreen-menu ul li {
+    margin: 20px 0;
+}
+
+.fullscreen-menu ul li a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+.page1 {
+    width: 100vw;
+    height: 10vh;
+}
+.page1 h4 {
+    color: white;
+    text-align: center;
+    padding-top: 2vw;
+    font-size: 1.7vw;
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 1));
+
+}
+.page1 h1 {
+    color: white;
+    font-size: 6vw;
+    padding-top: 10vw;
+    padding-left: 3vw;
+    font-family: 'Zodiak', serif;
+    font-weight: 500;
+    opacity: 0.9;
+
+}
+
+.page2 {
+    width: 100vw;
+}
+.page2 h3 {
+    color: rgb(189, 172, 172);
+    font-size: 3vw;
+    text-align: center;
+    padding-top: 31vw;
+    font-weight: 400;
+    font-family: 'Zodiak', serif;
+
+
+}
+.page2 h6 {
+    color: white;
+    text-align: center;
+    font-size: 1.1vw;
+    opacity: 0.9;
+    margin-top: 0.7vw;
+}
+.projects {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.project1 {
+    width: 400px;
+    height: 300px;
+    margin-top: 7vw;
+    margin-left: 1vw;
+    opacity: 0.9;
+    transition:cubic-bezier(0.25, 0.46, 0.45, 0.94 )1.2s;
+}
+/* .project1 img {
+    width: 100%; 
+    height: 100%; 
+object-fit: cover;
+} */
+.project1:hover{
+    opacity: 1;
+    filter: grayscale(1);
+}
+/* .project1 img:hover {
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 1));
+
+} */
+.project1 h4 {
+    font-size: 1.5vw;
+    color: white;
+    margin-top: 1vw;
+    font-family: 'Zodiak', serif;
+    opacity: 0.9;
+
+    
+}
+.lineline {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin-top: 8vw;
+    opacity: 0.2;
+}
+.page3 {
+    width: 100vw;
+    margin-top: 9vw;
+}
+.page3 h3 {
+    color: white;
+    text-align: center;
+    padding-top: 2vw;
+    font-size: 3vw;
+    font-weight: 500;
+    opacity: 0.8;
+    font-family: 'Zodiak', serif;
+
+}
+.content {
+    margin-top: 5vw;
+}
+.content1 {
+    width: 100vw;
+    height: 39vh;
+    border-top: 1px  solid white;
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+.content1:hover{
+    background-color: rgba(10, 10, 10, 0.986);
+}
+.text {
+    margin-top: -2vw;
+}
+.text h2 {
+    color: white;
+    margin-left: 4vw;
+    font-size: 5vw;
+    font-weight: 400;
+    font-family: 'Zodiak', serif;
+
+
+}
+.text h5 {
+    color: gray;
+    margin-left: 4vw;
+    font-size: 1.6vw;
+    font-weight: 100;
+    padding-top: 2vw;
+    
+
+
+    
+}
+
+.arrow i:hover{
+    color: white;
+}
+.bigvideo  {
+    width: 100vw;
+    height: auto;
+}
+.bigvideo h2 {
+    color: white;
+    text-align: center;
+    margin-top: 5vw;
+    font-size: 3vw;
+    font-weight: 200;
+    font-family: 'Zodiak', serif;
+    margin-bottom: 5vw;
+}
+.video1 h4 {
+    color: gray;
+    text-align: center;
+    font-size: 2.5vw;
+    margin-top: 1vw;
+    font-weight: 100;
+    font-family: 'Zodiak', serif;
+    opacity: 0.8;
+}
+.video1 video {
+    width: 80%;
+    height: 70%;
+    object-fit: cover;
+    margin-left: 10vw;
+    margin-top: 1vw;
+    margin-bottom: 10vw;
+}
+.footer h4 {
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    font-size: 3vw;
+    font-family: 'Zodiak', serif;
+    margin-bottom: 5vw;
+
+}
+.footer video {
+    width: 100%;
+    height: 50%;
+    opacity: 0.7;
+    object-fit: cover;
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+.footer .button {
+    padding: 1vw;
+    background-color: violet;
+    color: rgb(0, 0, 0);
+    margin-top: -30vw;
+    width: 20vw;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: 38vw;
+}
+.footer .button:hover{
+    background-color: rgb(218, 24, 218);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    .navbar .nav-links {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .fullscreen-menu.active {
+        display: flex;
+    }
+    .page1 h4 {
+        color: white;
+        text-align: center;
+        padding-top: 3vw;
+        font-size: 3vw;
+        mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 1));
+    
+    }
+    .page1 h1 {
+        color: white;
+        font-size: 9.4vw;
+        padding-top: 20vw;
+        padding-left: 5vw;
+
+    }
+    .page1 video {
+        width: 100vw;
+        height: 90vh;
+        object-fit: cover;
+        padding-top: 6vw;
+    }
+    .page2 h3 {
+        color: gray;
+        font-size: 7.2vw;
+        text-align: center;
+        padding-top: 52vw;
+    }
+    .page2 h6 {
+        color: white;
+        text-align: center;
+        font-size: 2.8vw;
+        opacity: 0.9;
+        margin-top: 0.7vw;
+    }
+    .projects {
+        flex-direction: column;
+    }
+    /* .project1 img {
+        margin-left: 0vw;
+    } */
+
+    .project1 {
+        width: 370px;
+        height: 300px;
+        margin-top: 10vw;
+        padding-left: 5.4vw;
+        font-size: 7vw;
+        color: white;
+        font-family: 'Zodiak', serif;
+        font-weight: 100;
+        
+    }
+    .project1 h4 {
+        font-size: 5vw;
+        text-align: center;
+    }
+    .page3 h3 {
+        color: white;
+        text-align: center;
+        padding-top: 5vw;
+        font-size: 8vw;
+        font-weight: 500;
+        opacity: 0.8;
+
+    }
+    .content {
+        margin-top: 5vw;
+    }
+    .content1 {
+        width:100vw;
+        height: 30vh;
+        border-top: 1px  solid rgba(255, 255, 255, 0.418);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.493);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+    
+    }
+    .text {
+        margin-top: -3vw;
+    }
+    .text h2 {
+        color: white;
+        margin-left: 4vw;
+        font-size: 6vw;
+        font-weight: 200;
+        font-family: 'Zodiak', serif;
+        opacity: 0.8;
+    
+    
+    }
+    .text h5 {
+        color: gray;
+        margin-left: 4vw;
+        font-size: 3vw;
+        font-weight: 100;
+        display: none;
+        
+    
+    
+        
+    }
+    .arrow a:hover{
+        background-color: rgba(255, 255, 255, 0.938);
+        z-index: -1;
+    }
+    .arrow i:hover{
+        color: black;
+        z-index: 99;
+    }
+    .bigvideo h2 {
+        color: white;
+        text-align: center;
+        margin-top: 6vw;
+        font-size: 6vw;
+        font-weight: 200;
+        font-family: 'Zodiak', serif;
+        margin-bottom: 15vw;
+    }
+    .video1 video {
+        margin-bottom: 25vw;
+        margin-top: 1vw;
+    }
+    .video1 h4 {
+        font-size: 5vw;
+        color: rgba(255, 255, 255, 0.815);
+    }
+    .footer h4 {
+        color: white;
+        text-align: center;
+        font-weight: 100;
+        font-size: 6vw;
+        margin-top: 7vw;
+        font-family: 'Zodiak', serif;
+    
+    }
+}
